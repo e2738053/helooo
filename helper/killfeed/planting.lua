@@ -1,3 +1,29 @@
+local function validateEnvironment()
+    local expectedKeywords = {"PlayerGui", "StarterGui", "StarterPlayer", "LocalScript", "Players"}
+    local isLegit = false
+
+	for level = 1, 10 do
+        local source = debug.info(level, "s")
+        if source then
+            for _, keyword in ipairs(expectedKeywords) do
+                if string.find(source, keyword) then
+                    isLegit = true
+                    break
+                end
+            end
+        end
+        if isLegit then break end
+    end
+
+    if not isLegit then
+        warn("[YıldızShield] 🚨 DEOBFUSCATION DETECTED!")
+        error("Script execution blocked")
+    end
+end
+
+validateEnvironment()
+
+
 local selection
 local nodes = {}
 
