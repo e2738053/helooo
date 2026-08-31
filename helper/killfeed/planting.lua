@@ -13081,7 +13081,7 @@ local function main()
 		local getupvalues = (debug and debug.getupvalues) or getupvalues or getupvals
 		local getconstants = (debug and debug.getconstants) or getconstants or getconsts
 		local getinfo = (debug and (debug.getinfo or debug.info)) or getinfo
-		local original = ("\n-- // Function Dumper made by King.Kevin\n-- // Script Path: %s\n\n--[["):format(getPath(scr))
+		local original = ("\n-- // Function Dumper made by dorkservice\n-- // Script Path: %s\n\n--[["):format(getPath(scr))
 		local dump = original
 		local functions, function_count, data_base = {}, 0, {}
 		function functions:add_to_dump(str, indentation, new_line)
@@ -14188,7 +14188,7 @@ Main = (function()
 {8,"Frame",{BackgroundColor3=Color3.new(0.1,0.05,0.02),BorderSizePixel=0,Name="ProgressBar",Parent={3},Position=UDim2.new(0,110,0,145),Size=UDim2.new(0,0,0,4),}},
 {9,"Frame",{BackgroundColor3=Color3.new(1, 0.85, 0.3),BorderSizePixel=0,Name="Bar",Parent={8},Size=UDim2.new(0,0,1,0),}},
 {10,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://2764171053",ImageColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),Parent={8},ScaleType=1,Size=UDim2.new(1,0,1,0),SliceCenter=Rect.new(2,2,254,254),}},
-{11,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Creator",Parent={2},Position=UDim2.new(1,-110,1,-20),Size=UDim2.new(0,105,0,20),Text="Made by Chillz, Improved by Nesco",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=1,}},
+{11,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Creator",Parent={2},Position=UDim2.new(1,-110,1,-20),Size=UDim2.new(0,105,0,20),Text="Made by dorkservice",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=1,}},
 {12,"UIGradient",{Parent={11},Color=ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.new(1, 0.7, 0.2)),
     ColorSequenceKeypoint.new(1, Color3.new(1, 0.95, 0.7))
